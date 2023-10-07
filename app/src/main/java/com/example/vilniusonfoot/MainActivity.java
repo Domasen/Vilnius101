@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         gifImage6 = findViewById(R.id.gifImage6);
 
         moveToGifPosition(gifImage1, 50, 200);
-        moveToGifPosition(gifImage2, 150, 300);
-        moveToGifPosition(gifImage3, 250, 400);
-        moveToGifPosition(gifImage4, 350, 500);
-        moveToGifPosition(gifImage5, 450, 600);
-        moveToGifPosition(gifImage6, 550, 700);
+        moveToGifPosition(gifImage2, 1150, 600);
+        moveToGifPosition(gifImage3, 1250, 1400);
+        moveToGifPosition(gifImage4, 2350, 900);
+        moveToGifPosition(gifImage5, 3850, 1900);
+        moveToGifPosition(gifImage6, 3550, 1300);
 
 
 
@@ -83,11 +83,11 @@ public class MainActivity extends AppCompatActivity {
 //                            moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
                               //moveToGifPosition(gifImage, 50, 100);
                             moveToGifPosition(gifImage1, 50, 200);
-                            moveToGifPosition(gifImage2, 150, 300);
-                            moveToGifPosition(gifImage3, 250, 400);
-                            moveToGifPosition(gifImage4, 350, 500);
-                            moveToGifPosition(gifImage5, 450, 600);
-                            moveToGifPosition(gifImage6, 550, 700);
+                            moveToGifPosition(gifImage2, 1150, 600);
+                            moveToGifPosition(gifImage3, 1250, 1400);
+                            moveToGifPosition(gifImage4, 2350, 900);
+                            moveToGifPosition(gifImage5, 3850, 1900);
+                            moveToGifPosition(gifImage6, 3550, 1300);
                         }
                         break;
                     case MotionEvent.ACTION_UP:
@@ -183,11 +183,11 @@ public class MainActivity extends AppCompatActivity {
 //            moveGifToPosition(gifImage1, image.getWidth()-130, image.getHeight()-130);
               //moveToGifPosition(gifImage, 50, 100);
             moveToGifPosition(gifImage1, 50, 200);
-            moveToGifPosition(gifImage2, 150, 300);
-            moveToGifPosition(gifImage3, 250, 400);
-            moveToGifPosition(gifImage4, 350, 500);
-            moveToGifPosition(gifImage5, 450, 600);
-            moveToGifPosition(gifImage6, 550, 700);
+            moveToGifPosition(gifImage2, 1150, 600);
+            moveToGifPosition(gifImage3, 1250, 1400);
+            moveToGifPosition(gifImage4, 2350, 900);
+            moveToGifPosition(gifImage5, 3850, 1900);
+            moveToGifPosition(gifImage6, 3550, 1300);
             return true;
         }
     }
