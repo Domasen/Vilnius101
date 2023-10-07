@@ -37,13 +37,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         image = findViewById(R.id.image);
-        gifImage = findViewById(R.id.gifImage);
-        //gifImage3 = findViewById(R.id.gifImage);
-        //gifImage4 = findViewById(R.id.gifImage);
-        //gifImage5 = findViewById(R.id.gifImage);
-        //gifImage6 = findViewById(R.id.gifImage);
+        gifImage1 = findViewById(R.id.gifImage1);
+        gifImage2 = findViewById(R.id.gifImage2);
+        gifImage3 = findViewById(R.id.gifImage3);
+        gifImage4 = findViewById(R.id.gifImage4);
+        gifImage5 = findViewById(R.id.gifImage5);
+        gifImage6 = findViewById(R.id.gifImage6);
 
-          moveToGifPosition(gifImage, 50, 100);
+        moveToGifPosition(gifImage1, 50, 200);
+        moveToGifPosition(gifImage2, 150, 300);
+        moveToGifPosition(gifImage3, 250, 400);
+        moveToGifPosition(gifImage4, 350, 500);
+        moveToGifPosition(gifImage5, 450, 600);
+        moveToGifPosition(gifImage6, 550, 700);
 
 
 
@@ -75,7 +81,13 @@ public class MainActivity extends AppCompatActivity {
 //                            moveGifToPosition(gifImage4, image.getWidth()-90, image.getHeight()-90);
 //                            moveGifToPosition(gifImage5, image.getWidth()-110, image.getHeight()-110);
 //                            moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
-                              moveToGifPosition(gifImage, 50, 100);
+                              //moveToGifPosition(gifImage, 50, 100);
+                            moveToGifPosition(gifImage1, 50, 200);
+                            moveToGifPosition(gifImage2, 150, 300);
+                            moveToGifPosition(gifImage3, 250, 400);
+                            moveToGifPosition(gifImage4, 350, 500);
+                            moveToGifPosition(gifImage5, 450, 600);
+                            moveToGifPosition(gifImage6, 550, 700);
                         }
                         break;
                     case MotionEvent.ACTION_UP:
@@ -169,7 +181,13 @@ public class MainActivity extends AppCompatActivity {
 //            moveGifToPosition(gifImage1, image.getWidth()-90, image.getHeight()-90);
 //            moveGifToPosition(gifImage1, image.getWidth()-110, image.getHeight()-110);
 //            moveGifToPosition(gifImage1, image.getWidth()-130, image.getHeight()-130);
-              moveToGifPosition(gifImage, 50, 100);
+              //moveToGifPosition(gifImage, 50, 100);
+            moveToGifPosition(gifImage1, 50, 200);
+            moveToGifPosition(gifImage2, 150, 300);
+            moveToGifPosition(gifImage3, 250, 400);
+            moveToGifPosition(gifImage4, 350, 500);
+            moveToGifPosition(gifImage5, 450, 600);
+            moveToGifPosition(gifImage6, 550, 700);
             return true;
         }
     }
