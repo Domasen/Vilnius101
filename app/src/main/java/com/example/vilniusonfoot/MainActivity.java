@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         moveGifToPosition(gifImage5, image.getWidth()-110, image.getHeight()-110);
         moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
 
+        
+
 
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
         image.setOnTouchListener(new View.OnTouchListener() {
