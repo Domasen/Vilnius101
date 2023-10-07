@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="matrix"
-        android:src="@drawable/picture"/>
+        android:src="@drawable/picture" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImage1"
@@ -39,9 +39,30 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/moneygif" />
+
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImage6"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/moneygif" />
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/drawable"
+        android:backgroundTint="@color/white"
+        android:shape="rectangle"
+        android:text="Ekskursijos"
+        android:textColor="#ff0000" />
+
+
 </RelativeLayout>

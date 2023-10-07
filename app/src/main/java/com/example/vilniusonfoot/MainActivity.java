@@ -6,6 +6,7 @@ import android.graphics.PointF;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import pl.droidsonroids.gif.GifImageView;
 import android.view.ScaleGestureDetector;
@@ -53,7 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        Button myButton = findViewById(R.id.myButton);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // handle your button click here
+            }
+        });
 
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
         image.setOnTouchListener(new View.OnTouchListener() {
