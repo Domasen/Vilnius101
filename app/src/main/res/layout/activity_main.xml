@@ -11,44 +11,8 @@
         android:src="@drawable/picture"/>
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage1"
+        android:id="@+id/gifImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/moneygif" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/moneygif" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/moneygif" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/moneygif" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/moneygif" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImage6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/moneygif" />
-
-
-
-
-
-
 </RelativeLayout>

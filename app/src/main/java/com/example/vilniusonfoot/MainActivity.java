@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView image;
-    private GifImageView gifImage0, gifImage1, gifImage2, gifImage3, gifImage4, gifImage5, gifImage6;
+    private GifImageView gifImage, gifImage1, gifImage2, gifImage3, gifImage4, gifImage5, gifImage6;
     private Matrix matrix = new Matrix();
     private Matrix savedMatrix = new Matrix();
 
@@ -37,21 +37,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         image = findViewById(R.id.image);
-        gifImage1 = findViewById(R.id.gifImage1);
-        gifImage2 = findViewById(R.id.gifImage2);
-        gifImage3 = findViewById(R.id.gifImage3);
-        gifImage4 = findViewById(R.id.gifImage4);
-        gifImage5 = findViewById(R.id.gifImage5);
-        gifImage6 = findViewById(R.id.gifImage6);
-        //adjustGifPosition();
-        moveGifToPosition(gifImage1, image.getWidth()-30, image.getHeight()-30);
-        moveGifToPosition(gifImage2, image.getWidth()-50, image.getHeight()-50);
-        moveGifToPosition(gifImage3, image.getWidth()-70, image.getHeight()-70);
-        moveGifToPosition(gifImage4, image.getWidth()-90, image.getHeight()-90);
-        moveGifToPosition(gifImage5, image.getWidth()-110, image.getHeight()-110);
-        moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
+        gifImage = findViewById(R.id.gifImage);
+        //gifImage3 = findViewById(R.id.gifImage);
+        //gifImage4 = findViewById(R.id.gifImage);
+        //gifImage5 = findViewById(R.id.gifImage);
+        //gifImage6 = findViewById(R.id.gifImage);
 
-        
+          moveToGifPosition(gifImage, 50, 100);
+
+
+
 
 
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
@@ -74,12 +69,13 @@ public class MainActivity extends AppCompatActivity {
                             matrix.postTranslate(curr.x - start.x, curr.y - start.y);
                             constrainDrag();
                             //adjustGifPosition();
-                            moveGifToPosition(gifImage1, image.getWidth()-30, image.getHeight()-30);
-                            moveGifToPosition(gifImage2, image.getWidth()-50, image.getHeight()-50);
-                            moveGifToPosition(gifImage3, image.getWidth()-70, image.getHeight()-70);
-                            moveGifToPosition(gifImage4, image.getWidth()-90, image.getHeight()-90);
-                            moveGifToPosition(gifImage5, image.getWidth()-110, image.getHeight()-110);
-                            moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
+//                            moveGifToPosition(gifImage1, image.getWidth()-30, image.getHeight()-30);
+//                            moveGifToPosition(gifImage2, image.getWidth()-50, image.getHeight()-50);
+//                            moveGifToPosition(gifImage3, image.getWidth()-70, image.getHeight()-70);
+//                            moveGifToPosition(gifImage4, image.getWidth()-90, image.getHeight()-90);
+//                            moveGifToPosition(gifImage5, image.getWidth()-110, image.getHeight()-110);
+//                            moveGifToPosition(gifImage6, image.getWidth()-130, image.getHeight()-130);
+                              moveToGifPosition(gifImage, 50, 100);
                         }
                         break;
                     case MotionEvent.ACTION_UP:
@@ -116,23 +112,7 @@ public class MainActivity extends AppCompatActivity {
 //        gifImage.setY(gifY);
 //    }
 
-//    private void moveToGifPosition(float xOffset, float yOffset) {
-//        matrix.getValues(m);
-//
-//        float transX = m[Matrix.MTRANS_X];
-//        float transY = m[Matrix.MTRANS_Y];
-//        float scaleX = m[Matrix.MSCALE_X];
-//        float scaleY = m[Matrix.MSCALE_Y];
-//
-//        // Calculate the GIF's position based on the image's scale and translation
-//        float gifX = transX + (xOffset * scaleX);
-//        float gifY = transY + (yOffset * scaleY);
-//
-//        gifImage.setX(gifX);
-//        gifImage.setY(gifY);
-//    }
-
-    private void moveGifToPosition(GifImageView gif, float xOffset, float yOffset) {
+    private void moveToGifPosition(GifImageView gif, float xOffset, float yOffset) {
         matrix.getValues(m);
 
         float transX = m[Matrix.MTRANS_X];
@@ -140,12 +120,30 @@ public class MainActivity extends AppCompatActivity {
         float scaleX = m[Matrix.MSCALE_X];
         float scaleY = m[Matrix.MSCALE_Y];
 
+        // Calculate the GIF's position based on the image's scale and translation
         float gifX = transX + (xOffset * scaleX);
         float gifY = transY + (yOffset * scaleY);
 
-        gif.setX(gifX);
-        gif.setY(gifY);
+//        gifImage.setX(gifX);
+//        gifImage.setY(gifY);
+          gif.setX(gifX);
+          gif.setY(gifY);
     }
+
+//    private void moveGifToPosition(GifImageView gif, float xOffset, float yOffset) {
+//        matrix.getValues(m);
+//
+//        float transX = m[Matrix.MTRANS_X];
+//        float transY = m[Matrix.MTRANS_Y];
+//        float scaleX = m[Matrix.MSCALE_X];
+//        float scaleY = m[Matrix.MSCALE_Y];
+//
+//        float gifX = transX + (xOffset * scaleX);
+//        float gifY = transY + (yOffset * scaleY);
+//
+//        gif.setX(gifX);
+//        gif.setY(gifY);
+//    }
 
 
 
@@ -171,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
 //            moveGifToPosition(gifImage1, image.getWidth()-90, image.getHeight()-90);
 //            moveGifToPosition(gifImage1, image.getWidth()-110, image.getHeight()-110);
 //            moveGifToPosition(gifImage1, image.getWidth()-130, image.getHeight()-130);
+              moveToGifPosition(gifImage, 50, 100);
             return true;
         }
     }
